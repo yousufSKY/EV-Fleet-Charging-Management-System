@@ -203,6 +203,92 @@ export function Dashboard() {
             ))}
           </div>
         )}
+
+        {/* Recent Activity Section */}
+        <div className="mt-12">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Recent Activity</h2>
+          <div className="bg-white rounded-xl shadow-md overflow-hidden">
+            <div className="divide-y">
+              <div className="p-6 flex items-center justify-between hover:bg-gray-50 transition">
+                <div>
+                  <p className="font-semibold text-gray-900">Tesla Model 3 - Battery Updated</p>
+                  <p className="text-sm text-gray-600">Battery level changed to 85%</p>
+                </div>
+                <span className="text-xs text-gray-500">2 hours ago</span>
+              </div>
+              <div className="p-6 flex items-center justify-between hover:bg-gray-50 transition">
+                <div>
+                  <p className="font-semibold text-gray-900">Vehicle Location Updated</p>
+                  <p className="text-sm text-gray-600">Vehicle moved to new location</p>
+                </div>
+                <span className="text-xs text-gray-500">5 hours ago</span>
+              </div>
+              <div className="p-6 flex items-center justify-between hover:bg-gray-50 transition">
+                <div>
+                  <p className="font-semibold text-gray-900">Charging Session Completed</p>
+                  <p className="text-sm text-gray-600">Nissan Leaf fully charged</p>
+                </div>
+                <span className="text-xs text-gray-500">Yesterday</span>
+              </div>
+              <div className="p-6 flex items-center justify-between hover:bg-gray-50 transition">
+                <div>
+                  <p className="font-semibold text-gray-900">Fleet Health Check</p>
+                  <p className="text-sm text-gray-600">All vehicles are in good condition</p>
+                </div>
+                <span className="text-xs text-gray-500">2 days ago</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Quick Stats & Tips */}
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="bg-blue-50 rounded-xl p-6 border border-blue-200">
+            <h3 className="font-bold text-blue-900 mb-4">Charging Tips</h3>
+            <ul className="space-y-3 text-sm text-blue-800">
+              <li>• Charge during off-peak hours for better rates</li>
+              <li>• Regular charging keeps battery healthy</li>
+              <li>• Avoid deep discharge cycles</li>
+              <li>• Use level 2 chargers for daily charging</li>
+            </ul>
+          </div>
+          <div className="bg-green-50 rounded-xl p-6 border border-green-200">
+            <h3 className="font-bold text-green-900 mb-4">Fleet Goals</h3>
+            <ul className="space-y-3 text-sm text-green-800">
+              <li>• Reduce charging costs by 20%</li>
+              <li>• Maintain minimum 40% battery average</li>
+              <li>• Schedule preventive maintenance</li>
+              <li>• Track carbon savings</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Fleet Statistics */}
+        <div className="mt-12">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Fleet Statistics</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="bg-white rounded-xl shadow-md p-6">
+              <p className="text-sm text-gray-600 mb-2">Total Distance</p>
+              <p className="text-3xl font-bold text-gray-900">2,485 km</p>
+              <p className="text-xs text-gray-500 mt-2">+12% from last month</p>
+            </div>
+            <div className="bg-white rounded-xl shadow-md p-6">
+              <p className="text-sm text-gray-600 mb-2">Carbon Saved</p>
+              <p className="text-3xl font-bold text-green-600">624 kg</p>
+              <p className="text-xs text-gray-500 mt-2">CO2 equivalent</p>
+            </div>
+            <div className="bg-white rounded-xl shadow-md p-6">
+              <p className="text-sm text-gray-600 mb-2">Charging Cost</p>
+              <p className="text-3xl font-bold text-gray-900">$128</p>
+              <p className="text-xs text-gray-500 mt-2">This month</p>
+            </div>
+            <div className="bg-white rounded-xl shadow-md p-6">
+              <p className="text-sm text-gray-600 mb-2">Avg Efficiency</p>
+              <p className="text-3xl font-bold text-blue-600">8.2</p>
+              <p className="text-xs text-gray-500 mt-2">km per kWh</p>
+            </div>
+          </div>
+        </div>
       </div>
 
       <VehicleModal
